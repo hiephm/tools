@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+### Alias and kube completion
+echo 'alias k="kubectl"' >> ~/.bashrc
+echo 'source <(kubectl completion bash | sed '\''s/kubectl/k/g'\'')' >> ~/.bashrc
+
 ### Install kube-ps1
 curl -o ~/kube-ps1.sh https://raw.githubusercontent.com/jonmosco/kube-ps1/master/kube-ps1.sh
 
