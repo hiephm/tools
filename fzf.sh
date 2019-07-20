@@ -1,5 +1,8 @@
 #! /usr/bin/env bash
 
 # Installing fzf
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+
+curl -L -o ~/fzf.zip https://github.com/junegunn/fzf/archive/master.zip
+unzip ~/fzf.zip
+mv ~/fzf-master ~/.fzf
 ~/.fzf/install --all
