@@ -1,6 +1,7 @@
 #! /usr/bin/env bash
 
 # Installing wrk
+# Require: unzip, openssl-devel
 
 curl -L -o /tmp/wrk.zip https://github.com/giltene/wrk2/archive/master.zip
 unzip /tmp/wrk.zip -d /tmp
